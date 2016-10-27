@@ -35,6 +35,7 @@ update-rc.d -f wifi_access_point remove
 
 wget "$OCTOPI_PHOTONIC3D_START_URL"
 chmod a+rx start.sh
+grep -lU $'\x0D' start.sh | xargs dos2unix
 # comment out the calls to startx/java, don't actually want to start the server
 #sed -i -e 's/^\(\s*java \)/\#\1/' start.sh
 #sed -i -e 's/^\(\s*startx \)/\#\1/' start.sh
