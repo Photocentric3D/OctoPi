@@ -43,7 +43,7 @@ grep -lU $'\x0D' start.sh | xargs dos2unix
 # Wait until background tasks (curl DL of dist zip) complete
 wait
 
-./start.sh $OCTOPI_PHOTOCENTRIC_HARDWARE
+./start.sh "" "" $OCTOPI_PHOTOCENTRIC_HARDWARE
 
 echo "All installed packages:"
 echo "-----------------------"
