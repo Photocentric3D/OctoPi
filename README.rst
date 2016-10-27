@@ -41,7 +41,9 @@ Then issue the following commands::
     curl -J -O -L  http://downloads.raspberrypi.org/raspbian_lite_latest
     cd ..
     sudo modprobe loop
-    sudo bash -x ./build photonic3d
+    sudo bash -x ./build photonic3d [variant]
+where [variant] can be:
+LCHR, Standalone [OR Photocentric10], 4kTouch, 4kScreen 
 
 Modifications to OctoPi
 ~~~~~~~~~~~~~~~~~~~~~~~
