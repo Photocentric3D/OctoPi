@@ -45,6 +45,10 @@ wait
 
 ./start.sh "" "" $OCTOPI_PHOTOCENTRIC_HARDWARE
 
+# Per pi setup script. should be ran only by OctoPi
+. /opt/cwh/imageSetup.sh
+
+
 echo "All installed packages:"
 echo "-----------------------"
 dpkg --get-selections | grep -v deinstall
