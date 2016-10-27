@@ -95,6 +95,10 @@ fi
 # WiringPi
 [ -n "$OCTOPI_INCLUDE_WIRINGPI" ] || OCTOPI_INCLUDE_WIRINGPI=yes
 
+# Photocentric specific variables
+[ -n "$OCTOPI_PHOTOCENTRIC_HARDWARE" ] || OCTOPI_PHOTOCENTRIC_HARDWARE=standalone
+
+
 ###############################################################################
 # Rewrite any build urls that are not yet set if we have a repository mirror
 # configured.
